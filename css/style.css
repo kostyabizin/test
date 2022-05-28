@@ -486,7 +486,7 @@ body {
   display: inline-block;
   width: .9rem;
   height: .6rem;
-  background-image: url("../../images/icons/chevron.png");
+  background-image: url("./../images/icons/chevron.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
