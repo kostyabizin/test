@@ -1,0 +1,69 @@
+.s-about 
+    padding: 7rem 0 8rem
+    background-image: url(./../images/bckgrnd/about.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top left
+    &__title
+        margin-bottom: 4rem
+        text-align: center
+    &__row
+        display: flex
+        margin-bottom: 5.8rem
+    &__col--left
+        margin-right: 3rem
+        padding-left: 10.5rem
+        .s-text
+            max-width: 46rem
+        .s-text + .s-text
+            margin-top: 1.5rem
+    &__col--right
+        width: 56rem
+        margin-right: -1rem
+        img
+            max-width: 100%
+            height: auto
+    &__descr
+        max-width: 65rem
+        margin: 0 auto
+        font-size: 2.8rem
+        line-height: 1.35
+        text-align: center
+        transform: translateX(1rem)
+        &::after
+            content: ''
+            display: block
+            width: 8.5rem
+            height: .2rem
+            margin: 0 auto
+            margin-top: 2rem
+            margin-bottom: 4rem
+            background-color: #fff
+    &__slider
+        .slick-track
+            display: flex
+            gap: 2.5rem
+    &__slider-item 
+        width: 26rem
+        height: 24.5rem
+        padding-top: 6rem
+        background-color: #fff
+        &:nth-of-type(1),
+        &:nth-of-type(3)
+            .s-about__slider-stars
+                margin-bottom: 3.5rem
+    &__slider-stars
+        width: 9rem
+        height: 4rem
+        margin: 0 auto
+        margin-bottom: 2rem
+        background-image: url(./../images/icons/stars.png)
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+    &__slider-text
+        font-size: 2.5rem
+        line-height: 1.2
+        text-align: center
+        color: #000
+

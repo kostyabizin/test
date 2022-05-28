@@ -1,0 +1,126 @@
+@charset 'UTF-8';
+/* Slider */
+/* .slick-loading .slick-list
+{
+    background: #fff url('/img/ajax-loader.gif') center center no-repeat;
+} */
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    color: transparent;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    flex-shrink: 0;
+    background-size: 1.5rem auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #567fca;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    transition: all .2s linear;
+    z-index: 5;
+}
+
+.slick-next.slick-disabled,
+.slick-prev.slick-disabled {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.slick-prev:hover
+{
+    outline: none;
+    transform: translate(-10%, -50%);
+}
+
+.slick-next:hover
+{
+    outline: none;
+    transform: translate(10%, -50%);
+}
+
+.slick-prev
+{
+    left: -10rem;
+    right: auto;
+    background-image: url(./../images/icons/arrow--prev.png);
+}
+
+.slick-next
+{
+    left: auto;
+    right: -11rem;
+    background-image: url(./../images/icons/arrow--next.png);
+}
+
+
+/* Dots */
+/* .slick-dotted.slick-slider
+{
+    margin-bottom: 5.5rem;
+} */
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 3rem;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .5rem;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+
+    display: block;
+
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: transparent;
+    border: .2rem solid #0acac5;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: all .25s linear;
+}
+.slick-dots li button:hover
+{
+    background-color: #0acac5;
+    outline: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #0acac5;
+}

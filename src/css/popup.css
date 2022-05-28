@@ -1,0 +1,113 @@
+.popup {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3% 0;
+    z-index: 9;
+    background: rgba(0,0,0,.5);
+    font-size: 0;
+    overflow: auto;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+.popup_visible {
+    display: block;
+}
+
+.popup__window {
+    position: relative;
+    display: none;
+    opacity: 0;
+    width: 69rem;
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 6rem;
+    background: var(--color-white);
+    border: 3px solid var(--color-red);
+    box-shadow: 0 .4rem .9rem rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.3s forwards;
+}
+
+.popup__window--lg {
+    width: 131rem;
+}
+
+.popup__window_visible {
+    display: block;
+}
+
+.popup__inner {
+    font-size: 1.8rem;
+    color: var(--color-black);
+}
+
+.popup__title {
+    margin-bottom: 4.3rem;
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.popup__subtitle {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.popup__recovery-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--color-grey-dark);
+    text-decoration: underline;
+}
+
+.popup__description {
+    margin-bottom: 5rem;
+}
+
+.popup__list {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.popup__list-item {
+    font-family: 'FuturaLightC', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.popup__message {
+    font-size: 1.8rem;
+}
+
+.popup-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    z-index: 4;
+    border: none;
+    background: none;
+    background-image: url('/img/icons/close.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.popup-is-opened {
+    position: fixed;
+    left: 0;
+    right: 0;
+}

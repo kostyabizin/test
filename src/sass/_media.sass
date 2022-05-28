@@ -1,0 +1,137 @@
+@media screen and (max-width: 1400px)
+    html,body
+        font-size: .7vw
+
+@media screen and (max-width: 1200px)
+    html,body
+        font-size: .844vw
+    .header__row
+        transform: none
+    .s-introduce__slider 
+        .slick-prev
+            left: 10rem
+        .slick-next
+            right: 10rem
+    .s-about__slider
+        width: 90rem
+        margin: 0 auto
+
+
+@media screen and (max-width: 1000px)
+    html,body
+        font-size: 1.01vw
+    .s-container
+        max-width: 95vw
+    .open-menu-btn
+        display: block
+    .header
+        &.opened
+            .header__nav
+                left: 0
+        &__row
+            max-width: 95vw
+        &__nav 
+            position: fixed
+            top: 0
+            bottom: 0
+            left: -100%
+            justify-content: flex-start
+            width: 100%
+            padding: 20vw 5vw
+            background-color: #000
+            transition: all .3s ease
+            overflow: auto
+            z-index: 3
+        .menu
+            flex-direction: column
+            margin: 0
+            max-width: 320px
+            &__item + .menu__item
+                margin-left: 0
+                margin-top: 1rem
+            &__link
+                font-size: 2rem
+                margin-bottom: 2rem
+        .search
+            justify-content: flex-start
+            margin-top: 10rem
+            &__input
+                flex: 1 0 auto
+                max-width: 320px
+                margin-left: 0
+            &__label
+                right: auto
+                left: 300px
+        &__logo
+            width: 10rem
+        &__phone
+            position: fixed
+            right: 3rem
+            bottom: 3rem
+        &__phone-link
+            display: none
+    .footer
+        min-height: 35rem 
+        &__contacts
+            flex-direction: column
+            align-items: flex-start
+            gap: 2rem
+        &__contacts-item:nth-of-type(2),
+        &__contacts-item:nth-of-type(3),
+        &__contacts-item:nth-of-type(4),
+        &__contacts-item:nth-of-type(5)
+            margin-right: 0
+        &__block-bottom
+            position: relative
+        &__info
+            flex-direction: column
+            align-items: flex-start
+            gap: 2rem
+    .s-about
+        &__row
+            flex-direction: column
+        &__col--left 
+            margin-right: 0
+            padding-left: 0
+            .s-text
+                max-width: 550px
+                margin: 0 auto
+        &__col--right
+            width: 100%
+            margin-right: 0
+            margin-top: 3rem
+            text-align: center
+        &__slider
+            width: 60rem
+            .slick-prev
+                left: -6rem
+            .slick-next
+                right: -7rem
+
+@media screen and (max-width: 800px)
+    html,body
+        font-size: 1.3vw
+    .s-introduce
+        &__slider 
+            .slick-prev
+                left: 3rem
+            .slick-next
+                right: 4rem
+        &__slider-item__content
+            padding-left: 20rem
+        &__slider-item__stamp
+            right: 2rem
+    
+@media screen and (max-width: 450px)
+    html,body
+        font-size: 2.1vw
+    .s-introduce
+        &__slider-item__title
+            font-size: 7rem
+        &__slider-item__content
+            padding-left: 5rem
+    .s-about
+        &__slider
+            width: 30rem
+
+
