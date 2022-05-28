@@ -486,7 +486,7 @@ body {
   display: inline-block;
   width: .9rem;
   height: .6rem;
-  background-image: url("./../images/icons/chevron.png");
+  background-image: url("../../images/icons/chevron.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -808,6 +808,25 @@ body {
   line-height: 1.4;
 }
 
+.s-name {
+  pointer-events: none;
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+  transform: rotate(-90deg);
+}
+
+.s-introduce {
+  position: relative;
+}
+
+.s-introduce .s-name {
+  top: 43.5rem;
+  left: 33.5rem;
+}
+
 .s-introduce__slider .slick-prev,
 .s-introduce__slider .slick-next {
   top: 59%;
@@ -868,11 +887,17 @@ body {
 }
 
 .s-about {
+  position: relative;
   padding: 7rem 0 8rem;
   background-image: url("../images/bckgrnd/about.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top left;
+}
+
+.s-about .s-name {
+  top: 11.5rem;
+  left: 33.5rem;
 }
 
 .s-about__title {
@@ -967,6 +992,10 @@ body {
   html,
   body {
     font-size: 0.7vw;
+  }
+
+  .s-name {
+    display: none;
   }
 }
 
