@@ -90,6 +90,9 @@
             align-items: flex-start
             gap: 2rem
     .s-about
+        &__title
+            &::after
+                right: 11rem
         &__row
             flex-direction: column
         &__col--left 
@@ -123,6 +126,10 @@
             padding-left: 20rem
         &__slider-item__stamp
             right: 2rem
+    .s-about
+        &__title
+            &::after
+                right: 0
     
 @media screen and (max-width: 450px)
     html,body
@@ -133,6 +140,11 @@
         &__slider-item__content
             padding-left: 5rem
     .s-about
+        &__title
+            font-size: 4rem
+            &::after
+                font-size: 5rem
+                right: -7rem
         &__slider
             width: 30rem
 

@@ -24,3 +24,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'CyrillicRibbon';
+    src: url('./../fonts/CyrillicRibbon.woff2') format('woff2'),
+        url('./../fonts/CyrillicRibbon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

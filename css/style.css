@@ -25,6 +25,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'CyrillicRibbon';
+  src: url("../fonts/CyrillicRibbon.woff2") format('woff2'),
+        url("../fonts/CyrillicRibbon.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @charset 'UTF-8';
 
 /* Slider */
@@ -250,6 +259,7 @@
 :root {
   --font-1: 'a_AvanteBs', sans-serif;
   --font-2: 'Open Sans', sans-serif;
+  --font-3: 'CyrillicRibbon', sans-serif;
 }
 
 html,
@@ -824,7 +834,7 @@ body {
 
 .s-introduce .s-name {
   top: 43.5rem;
-  left: 33.5rem;
+  left: 33.2rem;
 }
 
 .s-introduce__slider .slick-prev,
@@ -896,13 +906,31 @@ body {
 }
 
 .s-about .s-name {
-  top: 11.5rem;
-  left: 33.5rem;
+  top: 11rem;
+  left: 35rem;
 }
 
 .s-about__title {
+  position: relative;
   margin-bottom: 4rem;
   text-align: center;
+}
+
+.s-about__title h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.s-about__title::after {
+  content: "Home Republic";
+  position: absolute;
+  top: -3rem;
+  right: 22rem;
+  font-family: var(--font-3);
+  font-size: 6rem;
+  color: #cf9926;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .s-about__row {
@@ -1132,6 +1160,10 @@ body {
     gap: 2rem;
   }
 
+  .s-about__title::after {
+    right: 11rem;
+  }
+
   .s-about__row {
     flex-direction: column;
   }
@@ -1187,6 +1219,10 @@ body {
   .s-introduce__slider-item__stamp {
     right: 2rem;
   }
+
+  .s-about__title::after {
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1201,6 +1237,15 @@ body {
 
   .s-introduce__slider-item__content {
     padding-left: 5rem;
+  }
+
+  .s-about__title {
+    font-size: 4rem;
+  }
+
+  .s-about__title::after {
+    font-size: 5rem;
+    right: -7rem;
   }
 
   .s-about__slider {

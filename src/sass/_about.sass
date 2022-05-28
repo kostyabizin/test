@@ -6,11 +6,26 @@
     background-repeat: no-repeat
     background-position: top left
     .s-name
-        top: 11.5rem
-        left: 33.5rem
+        top: 11rem
+        left: 35rem
     &__title
+        position: relative
         margin-bottom: 4rem
         text-align: center
+        h2
+            position: relative
+            z-index: 1
+        &::after
+           content: 'Home Republic' 
+           position: absolute
+           top: -3rem
+           right: 22rem
+           font-family: var(--font-3)
+           font-size: 6rem
+
+           color: #cf9926
+           z-index: 0
+           opacity: .5
     &__row
         display: flex
         margin-bottom: 5.8rem
